@@ -1,0 +1,7 @@
+{
+  "name": "clean-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Vitor Lourenco <vitor.lourenco@opencircle.com.br>",
+  "license": "MIT"
+}
