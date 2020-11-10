@@ -2,9 +2,25 @@
   "name": "clean-node",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error:teste \n"
+  },
+  "lint-staged": {
+    "*.js": [
+      "standard --fix",
+      "git add"
+    ]
+  },
+  "husky":{
+    "hooks":{
+      "pre-commit":"lint-staged"
+    }
+  },
   "author": "Vitor Lourenco <vitor.lourenco@opencircle.com.br>",
   "license": "MIT",
   "devDependencies": {
-    "standard": "^16.0.1"
+    "husky": "^4.0.0-beta.5",
+    "lint-staged": "^9.4.3",
+    "standard": "^14.3.1"
   }
 }
